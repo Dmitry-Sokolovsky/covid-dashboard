@@ -1,0 +1,352 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #334055;
+  margin: 0 auto;
+  }
+  html, body {
+    height: 100%;
+  }
+  #container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+  #dashboardHeader{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: yellowgreen;
+    font-size: 1.2rem;
+    background-color: rgba(16, 7, 58, 0.575);
+  }
+  
+  #headerTitle{
+    padding-left: 10px;
+  }
+
+  #mainWrapper {
+    padding: 5px 0;
+  }
+  
+  #mainWrapperContainer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #leftColumnWrapper{
+    width: 16%;
+  }
+  #rightColumnWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  #globalCasesTitle {
+    margin: 5px 0;
+    text-align: center;
+    color:yellowgreen;
+  }
+  #search{
+    width: 95%;
+    margin: 3px 0;
+  }
+
+  #globalCases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: cases;
+    border: 2px solid rgb(33, 34, 36);
+    box-sizing:border-box;
+    margin-bottom: 10px;
+    background-color: rgba(16, 7, 58, 0.575);
+  }
+  
+  #countriesList{
+    border: 2px solid rgb(108, 149, 231);
+    box-sizing:border-box;
+  }
+  
+  #countriesList > div > div > ul > li:first-child{
+    display: none;
+  }
+  
+  #countriesTable {
+    border-collapse: collapse;
+    box-sizing:border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  #countriesTable li:hover{
+    background-color: rgb(247, 168, 140);
+    cursor: pointer;
+  }
+  
+  #countriesTableWrapper{
+    overflow-y: auto;    
+    overflow-x: hidden;
+    height: 60vh;
+  }
+  #countriesTable tbody td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #countriesTable tbody tr {
+    border-bottom: 1px solid #ddd;
+    box-sizing:border-box;
+    width: 100%;
+  }
+  
+  #countriesTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  #countrySwitch,#tableSwitch, #mapSwitch, #tableSwitchDay, #tableSwitchValues {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(162, 206, 74);
+  }
+  #mapSwitch{
+    width: 40%;
+  }
+  #countrySwitch{
+    width: 98%;
+  }
+  #tableSwitch, #tableSwitchDay{
+    margin: 0 2rem;
+  }
+  #countrySelector, #tableSelector {
+    padding: 0 5px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
+  #mapWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444666;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(33, 34, 36);
+    box-sizing:border-box;
+    margin: 0 3px;
+    position: relative;
+
+  }
+  
+  #tableWrapper{
+    border: 2px solid rgb(33, 34, 36);
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+  
+  #casesTableWrapper > table > tbody > tr > td {
+    text-align: center;
+    position: sticky;
+    background: rgb(234, 255, 185);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10%;
+  }
+  #casesTable td div{
+    padding: 4px 0;
+  }
+  #casesTable td{
+    color: rgb(0, 45, 51);
+    width: 32%;
+  }
+  #graphiсWrapper{
+    margin-top: 0.2rem;
+    border: 2px solid rgb(33, 34, 36);
+    box-sizing:border-box;
+    background-color: rgba(16, 7, 58, 0.575);
+
+  }
+  
+  #footer {
+    background-color: rgb(36, 21, 21);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  
+  #yearId{
+    color: white;
+  }
+  
+  .flag-img{
+    width: 30px;
+    }
+  li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  .active{
+    background: rgb(165, 235, 100);
+  }
+  h2{
+    margin: 0;
+    padding: 0;
+  }
+  #casesTableWrapperImg{
+    width: 100px;
+  }
+button{
+  background-color: #fff;
+  border-radius: 20%;
+  box-sizing:border-box;
+}
+button :hover{
+  background-color: red;
+}
+ul, li{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(228, 247, 255, 0.575);
+}
+#countriesTable li{
+  border-bottom: solid 1px black;
+  box-sizing:border-box;
+}
+#globalCasesCount{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(247, 74, 74);
+}
+#tableSwitchCases{
+  display: flex;
+  justify-content: space-around;
+  color: rgb(255, 242, 255);
+}
+#countryFlag{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 0.8rem 0;
+  height: 40%;
+  width: 100%;
+  color:yellowgreen;
+  font-size: 1.3rem;
+}
+#countryFlag img{
+  margin: 0 10px;
+}
+#casesTable{
+  width: 100%; 
+}
+#tableSwitchDayContain, 
+#tableSwitchContain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 40%;
+  font-size: 12px;
+  text-align: center;
+}
+#tableSwitchValues,
+#tableSwitchDay{
+  margin: 7px 0;
+}
+#globalCasesTable,
+#globalRecoveredTable,
+#globalDeathTable{
+  color: rgb(150, 1, 100);
+}
+h2{
+  font-size: 1.6rem;
+}
+#mapWrapper{
+  width: 700px;
+  height: 480px;
+}
+#mapWrapperTogle{
+  width: 680px;
+  height: 470px;
+}
+#tableWrapper{
+  display: flex;
+  justify-content: space-between;
+}
+#casesTableWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footer a{
+  text-decoration:none;
+  color: rgb(116, 83, 245);
+}
+#footer a:hover{
+  color:chartreuse;
+}
+@media  screen and (max-width: 1400px) {
+  #mapWrapper{
+    width: 530px;
+    height: 440px;
+  }
+  #mapWrapperTogle{
+    width: 510px;
+    height: 410px;
+  }
+}
+@media  screen and (max-width: 1200px) {
+  #mapWrapper{
+    width: 430px;
+    height: 420px;
+  }
+  #mapWrapperTogle{
+    width: 400px;
+    height: 390px;
+  }
+  #leftColumnWrapper{
+    width: 12%;
+  }
+}
+@media  screen and (max-width: 1000px) {
+  #leftColumnWrapper{
+    width: 20%;
+  }
+  #mapWrapper{
+    width: 480px;
+    height: 420px;
+  }
+  #mapWrapperTogle{
+    width: 470px;
+    height: 400px;
+  }
+}
+@media  screen and (max-width: 760px) {
+  #leftColumnWrapper{
+    width: 50%;
+    text-align: center;
+  }
+}
